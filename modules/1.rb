@@ -1,23 +1,25 @@
-module 4
+module Number
 
-	def 1
+	def one
 		puts "I am number 1"
 	end
 
-	def 3
+	def three
 		puts "I am number 3"
 	end
 
-	def NUMBER_4
+	def four
 		puts "I am number 4"
 	end
 
 end
 
 
-class 4
-	include 4
+class Module
+	include Number
 end
 
-number = 4.new
-number.1
+number = Module.new
+number.one()
+number.three()
+number.four()
